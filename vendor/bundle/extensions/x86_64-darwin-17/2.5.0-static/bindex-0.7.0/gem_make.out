@@ -1,0 +1,15 @@
+current directory: /Users/sumiinaoya/programing/Rails/meiji-encourage/vendor/bundle/gems/bindex-0.7.0/ext/skiptrace
+/Users/sumiinaoya/.rbenv/versions/2.5.3/bin/ruby -r ./siteconf20190601-86977-12bpfhq.rb extconf.rb
+creating Makefile
+
+current directory: /Users/sumiinaoya/programing/Rails/meiji-encourage/vendor/bundle/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/sumiinaoya/programing/Rails/meiji-encourage/vendor/bundle/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/cruby.bundle
+
+current directory: /Users/sumiinaoya/programing/Rails/meiji-encourage/vendor/bundle/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20190601-86977-1onhjgz/skiptrace
