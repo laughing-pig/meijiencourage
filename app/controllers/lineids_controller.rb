@@ -18,6 +18,6 @@ class LineidsController < ApplicationController
   def destroy
     @lineid = Lineid.find(params[:id])
     @lineid.destroy
-    redirect_to lineid_index_url
+    redirect_back(fallback_location: root_path)
   end
 end
