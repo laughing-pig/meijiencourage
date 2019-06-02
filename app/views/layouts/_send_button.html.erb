@@ -1,0 +1,9 @@
+<div class="box">
+  <h1>lineid</h1>
+  <%= form_for(@lineid, url: lineid_path, method: :post) do |f| %>
+    <%= f.text_field :name, placeholder: "名前",class:"form-content"%>
+    <%= f.text_field :faculity, placeholder: "学部",class:"form-content"%>
+    <%= f.text_field :lineid, placeholder: "LINEID",class:"form-content"%>
+    <%= f.submit "送信",class:"submit" %>
+  <% end %>
+</div>

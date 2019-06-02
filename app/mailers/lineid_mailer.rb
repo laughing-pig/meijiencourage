@@ -1,9 +1,10 @@
 class LineidMailer < ApplicationMailer
+  default from: ENV["GMAIL_ADDRESS"]
+
   def send_mail(lineid)
     @lineid = lineid
     mail(
-      from: "714encourage@gmail.com",
-      to: "714encourage@gmail.com",
+      to: ENV["GMAIL_ADDRESS"],
       subject: "エンターのLineID"
     )
   end

@@ -64,7 +64,20 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "meiji-encourage_#{Rails.env}"
 
   config.action_mailer.perform_caching = false
-
+  # ActionMailerのgmail用設定
+  config.action_mailer.delivery_method = :smtp
+  mail=ENV['GMAIL_ADDRESS']
+  pass=ENV['GMAIL_PASSWORD']
+  config.action_mailer.default_options = { from: mail }
+  config.action_mailer.smtp_settings = {
+     address:              'smtp.gmail.com',
+     port:                  587,
+     domain:               'smtp.gmail.com',
+     user_name:             mail,
+     password:              pass,
+     authentication:       'plain',
+     enable_starttls_auto:  true
+  }
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false

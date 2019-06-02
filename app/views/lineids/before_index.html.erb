@@ -1,0 +1,50 @@
+<div class="row">
+  <div class="col-12 offset-md-2 col-md-8">
+
+    <div class="managment">
+      <div class="managment-title">
+        <h2>管理画面</h2>
+      </div>
+      <ul class="nav nav-tabs nav-fill">
+          <li class="nav-item"><a href="/before_index" class="nav-link active">声かけ前</a></li>
+          <li class="nav-item"><a href="/after_index" class="nav-link">声かけ済み</a></li>
+      </ul>
+
+      <div class="lineid-index mt-4">
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>名前</th>
+                <th>学部</th>
+                <th>LINEID</th>
+                <th>声かけ</th>
+                <th>削除</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @lineids.each do |user| %>
+              <tr>
+                <th><%= user.id %></th>
+                <td><%= user.name %></td>
+                <td><%= user.faculity %></td>
+                <td><%= user.lineid %></td>
+                <td>
+                  <%= form_for(@lineid, url: status_path,method: :post) do |f| %>
+                  <%= hidden_field_tag :userid, user.id %>
+                  <%= f.submit "済み",class:"status-btn"%>
+                  <% end %>
+                </td>
+                <td><%= link_to "削除",lineid_index_path(id: user.id),method: :delete %></td>
+              </tr>
+
+              <% end %>
+            </tbody>
+          </table>
+
+      </div>
+    </div>
+
+  </div>
+</div>
