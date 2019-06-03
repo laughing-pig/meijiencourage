@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'lineids/index'
+  
   root to: 'toppages#home'
 
   post "lineid",to: "toppages#create"

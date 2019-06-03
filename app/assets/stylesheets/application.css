@@ -9,8 +9,9 @@
   background: none;
   color: red;
 }
+/*----about -----  */
 .services-section{
-  background: url("/images/bg.jpg");
+  background: none;
   background-size: cover;
   padding: 60px 0;
 }

@@ -1,6 +1,6 @@
 class LineidsController < ApplicationController
   def before_index
-    @lineids = Lineid.where(status: 0)
+    @lineids = Lineid.where(status: 0).page(params[:page])
     @lineid=Lineid.new
   end
 
