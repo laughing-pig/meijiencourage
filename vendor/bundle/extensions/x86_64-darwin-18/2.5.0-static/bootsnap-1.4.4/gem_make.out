@@ -1,0 +1,15 @@
+current directory: /private/var/folders/5l/6dqxmcwd35q4h8dlbkt459x80000gn/T/bundler20190616-71916-tb3si5bootsnap-1.4.4/gems/bootsnap-1.4.4/ext/bootsnap
+/Users/sumiinaoya/.rbenv/versions/2.5.3/bin/ruby -r ./siteconf20190616-71916-172lcna.rb extconf.rb
+creating Makefile
+
+current directory: /private/var/folders/5l/6dqxmcwd35q4h8dlbkt459x80000gn/T/bundler20190616-71916-tb3si5bootsnap-1.4.4/gems/bootsnap-1.4.4/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /private/var/folders/5l/6dqxmcwd35q4h8dlbkt459x80000gn/T/bundler20190616-71916-tb3si5bootsnap-1.4.4/gems/bootsnap-1.4.4/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /private/var/folders/5l/6dqxmcwd35q4h8dlbkt459x80000gn/T/bundler20190616-71916-tb3si5bootsnap-1.4.4/gems/bootsnap-1.4.4/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20190616-71916-37gtj2/bootsnap

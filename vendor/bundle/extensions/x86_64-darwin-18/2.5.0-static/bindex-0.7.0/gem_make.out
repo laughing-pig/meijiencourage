@@ -1,0 +1,15 @@
+current directory: /private/var/folders/5l/6dqxmcwd35q4h8dlbkt459x80000gn/T/bundler20190616-71916-sv770abindex-0.7.0/gems/bindex-0.7.0/ext/skiptrace
+/Users/sumiinaoya/.rbenv/versions/2.5.3/bin/ruby -r ./siteconf20190616-71916-3pn1to.rb extconf.rb
+creating Makefile
+
+current directory: /private/var/folders/5l/6dqxmcwd35q4h8dlbkt459x80000gn/T/bundler20190616-71916-sv770abindex-0.7.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /private/var/folders/5l/6dqxmcwd35q4h8dlbkt459x80000gn/T/bundler20190616-71916-sv770abindex-0.7.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/cruby.bundle
+
+current directory: /private/var/folders/5l/6dqxmcwd35q4h8dlbkt459x80000gn/T/bundler20190616-71916-sv770abindex-0.7.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20190616-71916-1l8b55q/skiptrace
