@@ -226,6 +226,11 @@
   font-size: 42px;
   font-family: "M PLUS 1P";
 }
+.box p{
+  padding: 10px;
+  color: white;
+  border: 2px solid#c30068;
+}
 .form-content{
   border:0;
   background: none;
