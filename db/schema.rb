@@ -12,7 +12,10 @@
 
 ActiveRecord::Schema.define(version: 2019_06_02_112506) do
 
-  create_table "lineids", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "lineids", force: :cascade do |t|
     t.string "name"
     t.string "faculity"
     t.string "lineid"

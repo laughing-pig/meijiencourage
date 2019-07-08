@@ -10,18 +10,17 @@
 #   https://dev.mysql.com/doc/refman/5.7/en/password-hashing.html
 #
 default: &default
-  adapter: mysql2
-  encoding: utf8
+  adapter: postgresql
+  encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
+  username: postgres
   password:
-  socket: /var/lib/mysql/mysql.sock
-
+  
 development:
   <<: *default
   database: meiji-encourage_development
 
-# Warning: The database defined as "test" will be erased and
+# Warning: The database defined as "test" will be erased andc
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
