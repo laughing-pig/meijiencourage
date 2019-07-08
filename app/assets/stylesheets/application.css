@@ -9,65 +9,6 @@
   background: none;
   color: red;
 }
-/*----about -----  */
-.services-section{
-  background: none;
-  background-size: cover;
-  padding: 60px 0;
-}
-.inner-width{
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
-  overflow: hidden;
-}
-.section-title{
-  text-align: center;
-  color: #ddd;
-  text-transform: uppercase;
-  font-size: 30px;
-}
-.border{
-  width: 160px;
-  height: 2px;
-  background: #82ccdd;
-  margin: 40px auto;
-}
-.services-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.service-box{
-  max-width: 33.33%;
-  padding: 10px;
-  text-align: center;
-  color: #ddd;
-  cursor: pointer;
-}
-
-.service-icon{
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  border: 3px solid #82ccdd;
-  color: #82ccdd;
-  transform: rotate(45deg);
-  margin-bottom: 30px;
-  margin-top: 16px;
-  transition: 0.3s linear;
-}
-.service-icon i{
-  line-height: 70px;
-  transform: rotate(-45deg);
-  font-size: 26px;
-}
-.service-box:hover .service-icon{
-  background: #82ccdd;
-  color: #ddd;
-}
 .service-title{
   font-size: 18px;
   text-transform: uppercase;
@@ -76,7 +17,7 @@
 .service-desc{
   font-size: 14px;
 }
-
+/* --------mediaクエリ--------- */
 @media screen and (max-width:960px) {
   .service-box{
     max-width: 45%;
@@ -120,19 +61,12 @@
 /* ---home----- */
 .landing-page{
   width: 100%;
-  height: 100vh;
+  height: auto;
   background: #000;
-  position: relative;
-  overflow: hidden;
 }
 .landing-page::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
-  background: url(/images/home5.jpg) no-repeat; 
   background-size: cover;
   opacity: .3;
   animation: anim 25s linear infinite;
@@ -157,6 +91,10 @@
   padding: 40px 0 20px ; 
   box-sizing: border-box;
   border-bottom: 2px solid #7b9ad0;
+}
+.page-content img{
+  width: 200px;
+  height: 200px;
 }
 .page-content h1{
   color: #ff7979;
@@ -288,4 +226,33 @@
   border-radius: 7px;
   background-color: #00904a;
   color: white;
+}
+
+/* ------- loop_image------- */
+.loop_css{
+  display: -webkit-flex;
+  display: flex;
+  width: 100vw;
+  height: 300px;
+  left: 50%;
+  margin-left: -50vw;
+  overflow: hidden;
+}
+.loop_css img{
+  width: auto;
+  height: 100%;
+}
+@-webkit-keyframes loop {
+  0%{
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+  }to{
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+.loop_css:hover ul{
+  animation-play-state: paused;
 }
