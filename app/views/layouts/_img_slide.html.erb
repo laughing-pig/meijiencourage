@@ -1,0 +1,25 @@
+<!-- スライダー全体を括るメインコンテナ -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="/images/ROGO背景透過.png" width="600" height="500" alt="Swiper01"></div>
+      <div class="swiper-slide"><img src="/images/Macbookpro.jpg" width="600" height="500" alt="Swiper02"></div>
+      <div class="swiper-slide"><img src="/images/home3.png" width="600" height="500" alt="Swiper03"></div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+<script>
+var swiper = new Swiper('.swiper-container', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+		},
+		loop: true,
+		autoplay:{
+			delay: 4000,
+			disableOnInteraction: true
+		},
+});
+</script>

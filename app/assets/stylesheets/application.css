@@ -1,175 +1,26 @@
-*{
-  margin: 0;
-  padding: 0;
-  font-family: "montserrat",sans-serif;
-  box-sizing: border-box;
+/* ------swiper(画像スライド)-------- */
+.swiper-container {
+  width: 600px;
+  height: 500px;
 }
-/* ------ flash_message----- */
-.danger-message{
-  background: none;
-  color: red;
+.swiper-button-prev,
+.swiper-button-next {
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
 }
-.service-title{
-  font-size: 18px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-.service-desc{
-  font-size: 14px;
-}
-/* --------mediaクエリ--------- */
-@media screen and (max-width:960px) {
-  .service-box{
-    max-width: 45%;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .service-box{
-    max-width: 50%;
-  }
-}
-
-@media screen and (min-width: 0px) and (max-width:480px) {
-  .service-box{
-    max-width: 100%;
-  }
-}
-@media screen and (min-width: 0px) and (max-width: 340px){
-  .page-content h1{
-    font-size: 30px!important;
-  }
-  .box h1{
-    font-size: 25px!important;
-  }
-}
-@media screen and (min-width: 341px) and (max-width: 480px){
-  .page-content h1{
-    font-size: 40px!important;
-  }
-  .box h1{
-    font-size: 30px!important;
-  }
-}
-@media screen and (min-width: 0px) and (max-width: 767px){
-  .landing-page{
-  
-  height: 1500px !important;
-  
-  }
-}
-/* ---home----- */
-.landing-page{
-  width: 100%;
-  height: auto;
-  background: #000;
-}
-.landing-page::after{
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  opacity: .3;
-  animation: anim 25s linear infinite;
-}
-@keyframes anim {
-  50%{
-    transform: scale(2);
-  }
-  100%{
-    transform: scale(1);
-  }
-}
-.container-fluid{
-  height: 100%;
-  position:absolute;
-  z-index:1;
-}
-.page-content{
-  width: 100%;
-  max-width: 1500px;
-  text-align: center;
-  padding: 40px 0 20px ; 
-  box-sizing: border-box;
-  border-bottom: 2px solid #7b9ad0;
-}
-.page-content img{
-  width: 200px;
-  height: 200px;
-}
-.page-content h1{
-  color: #ff7979;
-  font-size: 50px;
-  font-weight: 900;
-  margin-bottom: 20px;
-}
-.page-content p{
-  color: #fff;
-  margin-bottom: 20px;
-}
-.page-content a{
-  display: inline-block;
-  text-decoration: none;
-  color: #ff7979;
-  border: 2px solid #ff7979;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  transition: 0.4s linear;
-}
-.page-content a:hover{
-  color: #fff;
-  background: #ff7979;
-}
-/* ------dsc-area----- */
-.dsc-area{
-  padding: 20px;
-}
-.dsc-title{
-  margin: 10px 10px 0 15px;
-  font-size: 30px; 
-  letter-spacing: 6px;
-  color: white;
-}
-.dsc-title span{
-  color: #ff7979;
-  font-size: 45px;
-  letter-spacing: 3px;
-  font-weight: bold;
-}
-.dsc-area p{
-  color: white;
-}
-.dsc-text{
-  border-bottom: 1px solid #56a764;
-}
-.dsc-after{
-  padding-top: 15px;
-}
-
-.line-image{
-  width: 150px;
-  height: 300px;
-}
-/* -----button----- */
+/*  ------フォーム-------- */
 .box{
-  padding: 0 ;
-  margin: 0 auto;
-  background: none;
+  
+  background: #191919;
   text-align: center;
-  position: relative;
-  top: 50%;
 }
 .box h1{
-  color: #2ecc71;
-  font-weight: 500;
-  font-size: 42px;
-  font-family: "M PLUS 1P";
-}
-.box p{
-  padding: 10px;
   color: white;
-  border: 2px solid#c30068;
+  text-transform: uppercase;
+  font-weight: 500;
 }
-.form-content{
+.box input[type = "text"],.box input[type = "password"]{
   border:0;
   background: none;
   display: block;
@@ -183,21 +34,11 @@
   border-radius: 24px;
   transition: 0.25s;
 }
-@media screen and (min-width: 0px) and (max-width: 359px){
-  .form-content:focus{
-    width: 280px;
-    border-color: #2ecc71;
-  }
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
 }
-@media screen and (min-width: 360px){
-  .form-content:focus{
-    width: 280px;
-    border-color: #2ecc71;
-    transform: scalex(0.9);
-  }
-}
-
-.submit{
+.box input[type = "submit"]{
   border:0;
   background: none;
   display: block;
@@ -206,53 +47,11 @@
   border: 2px solid #2ecc71;
   padding: 14px 40px;
   outline: none;
-  color:white;
+  color: white;
   border-radius: 24px;
   transition: 0.25s;
   cursor: pointer;
 }
-.submit:hover{
+.box input[type = "submit"]:hover{
   background: #2ecc71;
-}
-.form-description{
-  padding-top: 20px;
-}
-/*-------managment------  */
-.managment{
-  margin-top: 40px;
-}
-.status-btn{
-  padding: 2px 5px;
-  border-radius: 7px;
-  background-color: #00904a;
-  color: white;
-}
-
-/* ------- loop_image------- */
-.loop_css{
-  display: -webkit-flex;
-  display: flex;
-  width: 100vw;
-  height: 300px;
-  left: 50%;
-  margin-left: -50vw;
-  overflow: hidden;
-}
-.loop_css img{
-  width: auto;
-  height: 100%;
-}
-@-webkit-keyframes loop {
-  0%{
-    -webkit-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    transform: translateX(100%);
-  }to{
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-}
-.loop_css:hover ul{
-  animation-play-state: paused;
 }
